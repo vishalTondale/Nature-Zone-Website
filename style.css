@@ -1,0 +1,486 @@
+@media screen and (min-width:1441px) {
+    body {
+        background-color: black;
+    }
+    .main {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    .logo {
+        width: 15%;
+        margin-left: 50px;
+        margin-top:20px;
+        height: 50px;
+        color:white;
+    }
+    .logo span {
+        color: #ff8200;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .options {
+        width: 60%;
+    }
+    .options ul{
+        display: flex;
+        justify-items: center;
+        align-items:stretch;
+        column-gap: 60px;
+    }
+    .options ul li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        list-style: none;
+        color: white;
+    }
+    .options a{
+        text-decoration: none;
+        text-align: center;
+        color:white;
+        transition: 0.4s ease-in-out;
+    }
+    .options a:hover {
+        color: #ff8200;
+    }
+    .search {
+        padding-left: 5%;
+        justify-content: end;
+    }
+    .search input {
+        border-right: none;
+        height: 30px;
+        border: none;
+    }
+    .search-btn {
+        border-left:none;
+        height: 35px;
+        color: black;
+        background-color: lightgreen;
+    }
+    .search-btn:hover {
+        color: white;
+        background-color: green;
+        cursor: pointer;
+    }
+
+    hr {
+        width: 95%;
+        border: 1px solid rgb(86, 86, 86);
+    }
+    /* header part */
+    header {
+        background-image: url("images\\wideredrose.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+        opacity: 1;
+        animation: slidephotos 35s infinite ease;
+
+    }
+    header h2 {
+        text-align: center;
+        padding-top: 80px;
+        text-align: center;
+        color: goldenrod;
+    }
+    header span {
+        text-shadow: 2px -2px 2px black;
+    }
+    header p {
+        line-height: normal;
+        text-align: center;
+        color: #ecc3e2;
+        text-shadow: 2px -2px 2px black;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @keyframes slidephotos {
+        0%{background-image: url("images\\wideredrose.jpg");}
+        20%{background-image: url("images\\widerose2.jpg");}
+        40%{background-image: url("images\\widesky.jpg");}
+        60%{background-image: url("images\\widetoph.jpg");}
+        80%{background-image: url("images\\widekilla.jpg");}
+        100%{background-image: url("images\\widesunrise.jpg");}
+        
+    }
+
+    /* photo gallary */
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 10px;
+    }
+    .photo {
+        border: 2px solid #ff8200;
+        box-shadow: 2px 2px 10px rgb(218, 67, 67);
+        min-width: 25vmin;
+        max-width: 30vmax;
+    }
+    .photo:hover{
+        box-shadow: 5px 5px 10px red;
+    }
+    .inner-photo {
+        width: 100%;
+        border: 1px solid red;
+        opacity: 0.5;
+        cursor:pointer;
+    }
+    .inner-photo:hover {
+        opacity: 1;
+    }
+    .pname {
+        color: rgb(10, 228, 248);
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .photos .photo i {
+        color: rgb(220, 213, 213);
+        text-align: center;
+    }
+    .sm {
+        text-align: center;
+    }
+
+    /* message form */
+    .contact-us {
+        margin:auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .message-form{
+        width: 90vw;
+        min-height: 100px;
+        text-align: center;
+        border: 2px solid white;
+        background-color:dimgray;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .message .message-form input {
+        width: 90%;
+        height: 5vh;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #ff8200;
+        border: none;
+        background-color: #ebd2e5;
+        opacity: 0.8;
+    }
+
+    .message .message-form input:hover {
+        background-color: whitesmoke;
+        opacity: 1;
+    }
+
+    .message .message-form button {
+        width: 90%;
+        height: 5vh;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #ff8200;
+        border: none;
+        transition: 0.2s ease-in-out;
+    }
+
+    .message .message-form button:hover {
+        width: 90%;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: green;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    /*  about us */
+
+    .about-us {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .about-us .connect-on-sm {
+        width: 90%;
+    }
+    .about-us ul {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-us ul li {
+        list-style-type: none;
+    }
+    .about-us ul li a {
+        text-decoration:none;
+        color: rgb(125, 120, 120);
+        font-size: 3rem;
+    }
+    .about-us ul li a:hover {
+        color: white
+    }
+    .copyright {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    body{
+        background-color: black;
+        background-size: cover;
+        scroll-behavior: auto;
+    }
+    .main {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100vh;
+        color: rgb(173, 163, 163);
+        opacity: 0.9;
+    }
+
+    /* navigation bar */
+    .navbar {
+        padding-top: 10px;
+        width: 100%;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .logo span {
+        color: #ff8200;
+        font-family: 'Times New Roman', Times, serif;
+        background: transparent;
+        font-weight: bold;
+        font-size:2rem;
+    }
+    .options ul{
+        display: flex;
+        padding-left: 20px;
+        gap: 25px;
+    }
+    .options ul li {
+        list-style: none;
+    }
+    .options ul li a{
+        text-decoration: none;
+        color:white;
+        transition: 0.4s ease-in-out;
+    }
+    .options a:hover {
+        color: #ff8200;
+        transition: 0.4s ease-in-out;
+        text-decoration-line: underline;
+    }
+    .search {
+        padding-left: 60%;
+        margin-top: -80px;
+        margin-bottom: 80px;
+        align-self: left;
+        justify-content: left;
+    }
+    .search input {
+        width: 55%;
+        border-right: none;
+        height: 20px;
+        border: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .search-btn {
+        width: 35%;
+        border:none;
+        height: 23px;
+        color: rgb(244, 232, 165);
+        background-color: green;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .search-btn:hover {
+        color: white;
+        background-color: green;
+        cursor: pointer;
+    }
+
+    /* hr tag */
+    hr {
+        width: 95%;
+        border: 1px solid rgb(86, 86, 86);
+    }
+
+    /* header part */
+    header {
+        padding: 2%;
+        width: 95%;
+        background-image: url("images\\wideredrose.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+        opacity: 1;
+        animation: slidephotos 35s infinite ease;
+
+    }
+    header h2 {
+        padding-top: 15%;
+        text-align: center;
+        color: rgb(253, 183, 4);
+        text-shadow: #ff8200;
+    }
+    header h2 span {
+        text-shadow: 2px -2px 2px black;
+    }
+    header p {
+        line-height: normal;
+        text-align: center;
+        color: #ecc3e2;
+        text-shadow: 2px -2px 2px black;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @keyframes slidephotos {
+        0%{background-image: url("images\\wideredrose.jpg");}
+        20%{background-image: url("images\\widerose2.jpg");}
+        40%{background-image: url("images\\widesky.jpg");}
+        60%{background-image: url("images\\widetoph.jpg");}
+        80%{background-image: url("images\\widekilla.jpg");}
+        100%{background-image: url("images\\widesunrise.jpg");}
+        
+    }
+
+    /* photo gallary */
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .photo {
+        border: 2px solid #ff8200;
+        box-shadow: 2px 2px 10px rgb(218, 67, 67);
+        max-width: 30vmin;
+        min-width: 25vmax;
+    }
+    .photo:hover{
+        box-shadow: 5px 5px 10px red;
+    }
+    .inner-photo {
+        width: 100%;
+        border: 1px solid red;
+        opacity: 0.5;
+        cursor:pointer;
+    }
+    .inner-photo:hover {
+        opacity: 2;
+    }
+    .pname {
+        color: rgb(10, 228, 248);
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .photos .photo i {
+        color: rgb(220, 213, 213);
+        text-align: center;
+    }
+    .sm {
+        text-align: center;
+    }
+
+    /* message form */
+    .contact-us {
+        margin:auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .message-form{
+        width: 90vw;
+        min-height: 300px;
+        text-align: center;
+        border: 2px solid white;
+        background-color:rgb(66, 65, 65);
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .message .message-form input {
+        width: 90%;
+        height: 5vh;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #ff8200;
+        border: none;
+        background-color: #ebd2e5;
+        opacity: 0.8;
+    }
+    .message .message-form input:hover {
+        background-color: whitesmoke;
+        opacity: 1;
+    }
+    .message .message-form button {
+        width: 90%;
+        height: 5vh;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #ff8200;
+        border: none;
+        transition: 0.2s ease-in-out;
+    }
+    .message .message-form button:hover {
+        width: 90%;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: green;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    /*  about us */
+    .about-us {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .about-us .connect-on-sm {
+        width: 90%;
+    }
+    .about-us ul {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .about-us ul li {
+        list-style-type: none;
+    }
+    .about-us ul li a {
+        text-decoration:none;
+        color: rgb(125, 120, 120);
+        font-size: 2em;
+    }
+    .about-us ul li a:hover {
+        color: white
+    }
+
+    /* copyyright  */
+    .copyright {
+        text-align: center;
+        font-size: 1rem;
+    }
+};
